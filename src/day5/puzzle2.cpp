@@ -65,7 +65,7 @@ void trim_range(const range_t& rng, range_list_t& known)
         tmp.push_back(range_pair.second);
       }
     }
-    trimmed = tmp;
+    trimmed = std::move(tmp);
   }
 
   for (const auto& range : trimmed) {

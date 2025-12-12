@@ -1,19 +1,14 @@
 #include <cmath>
-#include <filesystem>
 #include <fstream>
 #include <iostream>
 #include <utility>
 #include <vector>
 
+#include "../util.h"
+
 std::vector<std::pair<size_t, size_t>> get_ranges()
 {
-  auto inputPath = std::filesystem::path(__FILE__).parent_path() / "input1.txt";
-  std::ifstream input(inputPath);
-
-  if (!input.is_open()) {
-    std::cerr << "Failed to open input file!" << std::endl;
-    return {};
-  }
+  std::ifstream input = get_input_stream(__FILE__, "input.txt");
 
   std::vector<std::pair<size_t, size_t>> ranges;
 

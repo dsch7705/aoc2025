@@ -1,6 +1,7 @@
-#include <filesystem>
 #include <fstream>
 #include <iostream>
+
+#include "../util.h"
 
 void rotate(int& pos, int dir, int num)
 {
@@ -18,12 +19,7 @@ void rotate(int& pos, int dir, int num)
 
 int main(int argc, char** argv)
 {
-  auto inputPath = std::filesystem::path(__FILE__).parent_path() / "input1.txt";
-  std::ifstream input(inputPath);
-  if (!input.is_open()) {
-    std::cerr << "Failed to open input file!" << std::endl;
-    return -1;
-  }
+  std::ifstream input = get_input_stream(__FILE__, "input.txt");
 
   std::string line;
   int pos = 50;
