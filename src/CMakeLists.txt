@@ -8,3 +8,6 @@ add_executable(day2-puzzle2 day2/puzzle2.cpp)
 
 add_executable(day3-puzzle1 day3/puzzle1.cpp util.cpp)
 add_executable(day3-puzzle2 day3/puzzle2.cpp util.cpp)
+
+add_executable(day4-puzzle1 day4/puzzle1.cpp util.cpp)
+add_executable(day4-puzzle2 day4/puzzle2.cpp util.cpp)
