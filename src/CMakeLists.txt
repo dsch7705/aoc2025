@@ -17,3 +17,6 @@ add_executable(day5-puzzle2 day5/puzzle2.cpp util.cpp)
 
 add_executable(day6-puzzle1 day6/puzzle1.cpp util.cpp)
 add_executable(day6-puzzle2 day6/puzzle2.cpp util.cpp)
+
+add_executable(day7-puzzle1 day7/puzzle1.cpp util.cpp)
+add_executable(day7-puzzle2 day7/puzzle2.cpp util.cpp)
